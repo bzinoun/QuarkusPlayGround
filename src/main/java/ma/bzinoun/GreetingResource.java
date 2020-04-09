@@ -1,15 +1,13 @@
 package ma.bzinoun;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Path("/hello")
+
+@RestController("api")
 public class GreetingResource {
 
-    @GET
-    @Produces(MediaType.TEXT_PLAIN)
+@GetMapping("hello")
     public String hello() {
         return "hello";
     }
