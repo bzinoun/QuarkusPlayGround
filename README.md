@@ -1,4 +1,48 @@
-# quarkus-getting-started project
+# Quarkus playground
+
+Hi ✋ ,
+This repo is a playground for quarkus and Spring integration . 
+the project is generated automatically with vscode througt vscode Quarkus plugin 
+
+## Needs
+- ☕️ Java 11  : since quarkus 1.3.0.Final  Java 11 is default JDK . 
+- 🐳 docker for Containers
+- 🌐 httpie : Http client curl like
+- 📦 minikube
+- 🎛 VisualStudio code with Java Extension Pack 👍 , Quarkus Extension
+
+
+##Play with Quarkus (Spring syntax) 🍃
+- [x]  Remove Rest Easy annotation and replace it with Spring annotation
+    [x] @RestController - @RequestMapping
+    [x] @GetMapping
+- [x]  Add Spring @Service
+- [x]  Add Bean validatin ☕️https://quarkus.io/guides/validation
+- [x]  fetch data from Properties
+- [x]  Fetch  Data
+  - [x]  Add Spring Data 
+  - [x]  Add Jdbc H2
+  - [x]  Create user 
+  - [x]  Create repo
+  - [x]  get all users througt API 
+- [ ] Push docker Container Native  🐳
+- [ ] Push docker Container HotSpot 🐳
+- [ ] Deploy to MiniKube 🚀 
+- [ ] test HA with MiniKube 
+  - [ ] Performance test 🔥
+- [ ] Deploy to IBM OpenWisk Function
+- [ ] Deploy tp Knative Function
+- [ ] Automate deployment
+- [ ] Adding Kafka 
+
+##  command
+``` sh
+
+ $ ./mvnw quakus:dev
+ $ http :8080/api/user name==badr
+ $ http :8080/api/user  
+````
+
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
