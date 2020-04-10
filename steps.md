@@ -15,7 +15,8 @@
     1.2 @GetMapping
 - [x]  Add Spring @Service
 - [x]  Add Bean validatin ☕️https://quarkus.io/guides/validation
-- [ ]  Add Spring 
+- [ ]  fetch data from Properties
+- [ ]  Add Spring Data
 - [ ] Push docker Container Native  🐳
 - [ ] Push docker Container HotSpot 🐳
 - [ ] Deploy to MiniKube 🚀 
