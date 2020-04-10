@@ -14,12 +14,12 @@
     1.1 @RestController - @RequestMapping
     1.2 @GetMapping
 - [x]  Add Spring @Service
-- [ ]  Add Bean validatin ☕️
+- [x]  Add Bean validatin ☕️https://quarkus.io/guides/validation
 - [ ]  Add Spring 
 - [ ] Push docker Container Native  🐳
 - [ ] Push docker Container HotSpot 🐳
 - [ ] Deploy to MiniKube 🚀 
-- [ ] test HA with MiniKube
+- [ ] test HA with MiniKube 
     Performance test 🔥
 - [] Automate deployment
 

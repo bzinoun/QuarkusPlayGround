@@ -2,39 +2,53 @@ package ma.bzinoun;
 
 import java.util.Objects;
 
+import javax.validation.constraints.NotBlank;
+
 public class Input {
-String input ; 
 
-    public Input() {
+    @NotBlank(message="name should not be blank")
+    String name ; 
+
+    public Input() { 
     }
 
-    public Input(final String input) {
-        this.input = input;
+    public Input(String name) {
+        this.name = name;
     }
 
-    
-    public String getInput() {
-        return this.input;
+    public String getName() {
+        return this.name;
     }
 
-    public void setInput(final String input) {
-        this.input = input;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public Input input(final String input) {
-        this.input = input;
+    public Input name(String name) {
+        this.name = name;
         return this;
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof Input)) {
+            return false;
+        }
+        Input input = (Input) o;
+        return Objects.equals(name, input.name);
+    }
+
+    @Override
     public int hashCode() {
-        return Objects.hashCode(input);
+        return Objects.hashCode(name);
     }
 
     @Override
     public String toString() {
         return "{" +
-            " input='" + getInput() + "'" +
+            " name='" + getName() + "'" +
             "}";
     }
 
