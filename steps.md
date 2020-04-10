@@ -15,8 +15,13 @@
     1.2 @GetMapping
 - [x]  Add Spring @Service
 - [x]  Add Bean validatin ☕️https://quarkus.io/guides/validation
-- [ ]  fetch data from Properties
-- [ ]  Add Spring Data
+- [x]  fetch data from Properties
+- [x]  Fetch  Data
+  - [x]  Add Spring Data 
+  - [x]  Add Jdbc H2
+  - [x]  Create user 
+  - [x]  Create repo
+  - [x]  get all users througt API 
 - [ ] Push docker Container Native  🐳
 - [ ] Push docker Container HotSpot 🐳
 - [ ] Deploy to MiniKube 🚀 
