@@ -25,6 +25,7 @@ the project is generated automatically with vscode througt vscode Quarkus plugin
   - [x]  Create user 
   - [x]  Create repo
   - [x]  get all users througt API 
+- [X] Build native App 
 - [ ] Push docker Container Native  🐳
 - [ ] Push docker Container HotSpot 🐳
 - [ ] Deploy to MiniKube 🚀 
@@ -35,12 +36,13 @@ the project is generated automatically with vscode througt vscode Quarkus plugin
 - [ ] Automate deployment
 - [ ] Adding Kafka 
 
-##  command
+##  Command
 ``` sh
 
  $ ./mvnw quakus:dev
  $ http :8080/api/user name==badr
- $ http :8080/api/user  
+ $ http :8080/api/user 
+
 ````
 
 
@@ -71,4 +73,15 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 
 You can then execute your native executable with: `./target/quarkus-getting-started-1.0.0-SNAPSHOT-runner`
 
-If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image.
+## Building Native Images 
+quarkus provide out of the box two docker files . 
+Dockerfile.native for building native image GraalVm based
+Dockerfile.jvm for building hotspot(JVM) based images . 
+for the native one copy past command bellow . 
+``` sh
+ docker build -f src/main/docker/Dockerfile.native -t quarkus-hello . 
+````
+to run it : 
+``` sh
+docker run -i --rm -p 8080:8080 quarkus-hello
+````
