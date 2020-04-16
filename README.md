@@ -42,6 +42,7 @@ the project is generated automatically with vscode througt vscode Quarkus plugin
  $ ./mvnw quakus:dev
  $ http :8080/api/user name==badr
  $ http :8080/api/user 
+ docker-compose -f src/main/docker/quarkus-compose.yml up   
 
 ````
 
@@ -78,10 +79,10 @@ quarkus provide out of the box two docker files .
 Dockerfile.native for building native image GraalVm based
 Dockerfile.jvm for building hotspot(JVM) based images . 
 for the native one copy past command bellow . 
+
 ``` sh
- docker build -f src/main/docker/Dockerfile.native -t quarkus-hello . 
+ docker build -f src/main/docker/Dockerfile.native -t quarkus-hello .
 ````
 to run it : 
 ``` sh
-docker run -i --rm -p 8080:8080 quarkus-hello
 ````
